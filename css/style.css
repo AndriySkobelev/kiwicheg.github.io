@@ -25,6 +25,50 @@ box-shadow: 0px 1px 3px 0px #474747;
 height: 2px;
 width: 50px;
 }
+.navigation_m {
+    display: none;
+}
+.navigation_m span{
+    display: none;
+}
+@media (max-width: 900px){
+    .navigation_m{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 20%;
+        top: 0;
+        right: 0;
+        transform: rotate(180deg);
+        transform-origin: bottom right;
+        transition: transform .5s ease-in-out;
+    }
+    .navigation_m span{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+        background: url(../img/close.png) #000 ;
+        background-size: cover;
+        border: 1px solid #fe8e39;
+    }
+    .open_menu{
+        transform: rotate(0deg);
+    }
+    .navigation_m div{
+        border-bottom: 1px solid #fe8e39;
+        display: flex;
+        background: #606060;
+    }
+    .navigation_m div a{
+        text-align: center;
+        width: 100%;
+        color: #fff;
+    }
+}
+
   /*************/
  /*   HEADER  */
 /*************/
